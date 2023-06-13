@@ -1,11 +1,12 @@
 import React from 'react'
-import ProductCard from "../components/ProductCard"
+import ProductCard from "./ProductCard"
 
-const ItemListContainer = ({ productsData }) => {
+
+const ItemDetailContainer = ({ productsData }) => {
   return (
     <div>
       {
-      productsData.map((product) => {
+      productsData.map(product => {
       return (
         <ProductCard key={product.id} productsData={product} />
       )
@@ -15,4 +16,4 @@ const ItemListContainer = ({ productsData }) => {
   )
 }
 
-export default ItemListContainer
+export default ItemDetailContainer

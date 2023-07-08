@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import CartButtons from './CartButtons';
 
 const ProductCard = ({productsData}) => {
   return (
@@ -12,6 +13,7 @@ const ProductCard = ({productsData}) => {
                 {productsData.description}
               </Card.Text>
               <Link to={`/item/${productsData.id}`}>Detalle...</Link>
+              <CartButtons />
             </Card.Body>
           </Card>
         );
